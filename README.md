@@ -34,9 +34,10 @@ In the command line run the executable:
 
 ```
 $ ceol + # turns the volume up by 1
-$ ceol ++ # turns the volume up by 2
+$ ceol ++ # turns the volume up by 2 and so on
 $ ceol - # turns the volume down by 1
-$ ceol -- # turns the volume down by 2
+$ ceol -- # turns the volume down by 2 and so on
+$ ceol off # powers off to standby
 ```
 
 ## Development
