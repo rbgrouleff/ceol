@@ -5,15 +5,18 @@ require "ceol"
 
 commands = ARGF.argv.first
 Ceol::Controller.control do |controller|
-  commands.each_char do |command|
-    case command
-    when "+"
-      controller.volume_up
-    when "-"
-      controller.volume_down
-    when "off"
-      controller.off
+  case commands
+  when "off"
+    controller.off
+  else
+    commands.each_char do |command|
+      case command
+      when "+"
+        controller.volume_up
+      when "-"
+        controller.volume_down
+      end
+      sleep(0.5)
     end
-    sleep(0.5)
   end
 end
