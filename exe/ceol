@@ -1,3 +1,17 @@
 #!/usr/bin/env ruby
 
+require "bundler/setup"
 require "ceol"
+
+commands = ARGF.argv.first
+Ceol::Controller.control do |controller|
+  commands.each_char do |command|
+    case command
+    when "+"
+      controller.volume_up
+    when "-"
+      controller.volume_down
+    end
+    sleep(0.5)
+  end
+end

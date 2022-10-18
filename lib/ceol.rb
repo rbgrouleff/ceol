@@ -1,8 +1,9 @@
 # frozen_string_literal: true
 
-require_relative "ceol/version"
+require "ceol/configuration"
+require "ceol/controller"
+require "ceol/version"
 
 module Ceol
   class Error < StandardError; end
-  # Your code goes here...
 end
