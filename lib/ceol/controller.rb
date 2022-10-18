@@ -28,6 +28,10 @@ module Ceol
       connection.close unless connection.nil?
     end
 
+    def off
+      write("PWSTANDBY")
+    end
+
     def volume_down
       write("MVDOWN")
     end

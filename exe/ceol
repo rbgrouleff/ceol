@@ -11,6 +11,8 @@ Ceol::Controller.control do |controller|
       controller.volume_up
     when "-"
       controller.volume_down
+    when "off"
+      controller.off
     end
     sleep(0.5)
   end
