@@ -38,6 +38,7 @@ $ ceol ++ # turns the volume up by 2 and so on
 $ ceol - # turns the volume down by 1
 $ ceol -- # turns the volume down by 2 and so on
 $ ceol off # powers off to standby
+$ ceol on # powers on from standby
 ```
 
 ## Development
