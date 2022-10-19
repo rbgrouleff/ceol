@@ -8,6 +8,8 @@ Ceol::Controller.control do |controller|
   case commands
   when "off"
     controller.off
+  when "on"
+    controller.on
   else
     commands.each_char do |command|
       case command

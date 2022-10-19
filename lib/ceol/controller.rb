@@ -32,6 +32,10 @@ module Ceol
       write("PWSTANDBY")
     end
 
+    def on
+      write("PWON")
+    end
+
     def volume_down
       write("MVDOWN")
     end
