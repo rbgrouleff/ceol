@@ -1,5 +1,10 @@
 ## [Unreleased]
 
+## [0.4.0] - 2022-10-19
+
+- Add `digital` command to select digital in
+- Add `analog` command to select analog 1 in
+
 ## [0.3.0] - 2022-10-19
 
 - Add `on` command to change power to on
