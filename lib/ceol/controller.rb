@@ -28,6 +28,14 @@ module Ceol
       connection.close unless connection.nil?
     end
 
+    def analog_1
+      write("SIAUXB")
+    end
+
+    def digital_in
+      write("SIAUXD")
+    end
+
     def off
       write("PWSTANDBY")
     end
