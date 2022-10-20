@@ -33,12 +33,14 @@ or define a `CEOL_IPADDR` environment variable with the ip address of your CEOL 
 In the command line run the executable:
 
 ```
-$ ceol + # turns the volume up by 1
-$ ceol ++ # turns the volume up by 2 and so on
-$ ceol - # turns the volume down by 1
-$ ceol -- # turns the volume down by 2 and so on
-$ ceol off # powers off to standby
-$ ceol on # powers on from standby
+$ ceol +        # turns the volume up by 1
+$ ceol ++       # turns the volume up by 2 and so on
+$ ceol -        # turns the volume down by 1
+$ ceol --       # turns the volume down by 2 and so on
+$ ceol off      # powers off to standby
+$ ceol on       # powers on from standby
+$ ceol digital  # select digital in
+$ ceol analog   # select analog 1 in
 ```
 
 ## Development
