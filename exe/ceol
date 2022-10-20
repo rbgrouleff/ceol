@@ -10,6 +10,10 @@ Ceol::Controller.control do |controller|
     controller.off
   when "on"
     controller.on
+  when "digital"
+    controller.digital_in
+  when "analog"
+    controller.analog_1
   else
     commands.each_char do |command|
       case command
