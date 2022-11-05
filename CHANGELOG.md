@@ -1,5 +1,7 @@
 ## [Unreleased]
 
+- Add `mute` and `unmute` commands
+
 ## [0.4.0] - 2022-10-19
 
 - Add `digital` command to select digital in
