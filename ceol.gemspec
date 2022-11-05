@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
   spec.summary = "A CLI for controlling a Denon CEOL DRA-N5/RCD-N8 system."
   spec.homepage = "https://github.com/rbgrouleff/ceol"
   spec.license = "MIT"
-  spec.required_ruby_version = ">= 2.6.0"
+  spec.required_ruby_version = ">= 2.7.0"
 
   #spec.metadata["allowed_push_host"] = "TODO: Set to your gem server 'https://example.com'"
 
