@@ -14,6 +14,10 @@ Ceol::Controller.control do |controller|
     controller.digital_in
   when "analog"
     controller.analog_1
+  when "mute"
+    controller.mute
+  when "unmute"
+    controller.unmute
   else
     commands.each_char do |command|
       case command

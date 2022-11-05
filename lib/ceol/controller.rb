@@ -36,6 +36,14 @@ module Ceol
       write("SIAUXD")
     end
 
+    def mute
+      write("MUON")
+    end
+
+    def unmute
+      write("MUOFF")
+    end
+
     def off
       write("PWSTANDBY")
     end
