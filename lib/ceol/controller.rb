@@ -52,6 +52,10 @@ module Ceol
       write("PWON")
     end
 
+    def volume=(volume)
+      write("MV#{volume.clamp(0..60)}")
+    end
+
     def volume_down
       write("MVDOWN")
     end

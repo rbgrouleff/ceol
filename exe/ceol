@@ -19,14 +19,19 @@ Ceol::Controller.control do |controller|
   when "unmute"
     controller.unmute
   else
-    commands.each_char do |command|
-      case command
-      when "+"
-        controller.volume_up
-      when "-"
-        controller.volume_down
+    begin
+      volume = Integer(commands, 10).clamp(0..60)
+      controller.volume = volume
+    rescue ArgumentError
+      commands.each_char do |command|
+        case command
+        when "+"
+          controller.volume_up
+        when "-"
+          controller.volume_down
+        end
+        sleep(0.5)
       end
-      sleep(0.5)
     end
   end
 end
