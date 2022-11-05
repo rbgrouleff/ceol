@@ -1,5 +1,7 @@
 ## [Unreleased]
 
+## [0.5.0] - 2022-11-05
+
 - Add `mute` and `unmute` commands
 - Add command to set volume directly
 
