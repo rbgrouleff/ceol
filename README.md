@@ -41,6 +41,8 @@ $ ceol off      # powers off to standby
 $ ceol on       # powers on from standby
 $ ceol digital  # select digital in
 $ ceol analog   # select analog 1 in
+$ ceol mute     # Mute output
+$ ceol unmute   # Unmute output
 ```
 
 ## Development
